@@ -16,7 +16,6 @@ public class first {
 		given()
 		
 		.when()
-		
 		.get("https://reqres.in/api/users?page=2")
 		
 		.then()
@@ -37,7 +36,7 @@ public class first {
 		.body(h)
 		
 	    .when()
-	    .post("https://reqres.in/api/users")
+	    .post("https://reqres.in/api/users")  // if we want to store the id then it will be last statement.can't write any other after this jsonpath
 	    .jsonPath().getInt("id");
 		/*
 		 * .then() 
